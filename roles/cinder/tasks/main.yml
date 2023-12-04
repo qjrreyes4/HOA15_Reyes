@@ -15,8 +15,3 @@
     - name: Create Cinder database
       command: cinder-manage db sync
       become_user: cinder
-      
-    - name: Restart Cinder
-      service:
-        name: cinder-volume
-        state: restarted

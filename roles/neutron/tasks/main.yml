@@ -19,8 +19,3 @@
       template:
         src: ml2_conf.ini.j2
         dest: /etc/neutron/plugins/ml2/ml2_conf.ini
-    
-    - name: Restart Neutron
-      service:
-        name: neutron-server
-        state: restarted
